@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "Raleighst_geoJSON",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "id": 1, "Raleigh St": "Raleigh Street" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -79.049252219927439, 35.915657057505506 ], [ -79.047893611948368, 35.913211563143179 ] ] ] } }
+]
+}
