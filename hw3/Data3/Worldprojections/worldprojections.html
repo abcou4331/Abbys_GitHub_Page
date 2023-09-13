@@ -10,7 +10,7 @@
     
     <h2 style="color:rgb(12, 157, 206)"> How I made the different map projections using QGIS</h2>
     <p>First I installed two plugins called Globe Builder and Indicatrix Mapper that allows you to customize the world view of different map projections and provide caps that show how the shape of the countries are distorted.
-        Then I used the tab that allows you to change the map projections in order to select the different ones I wanted. After that I added a caption to define the map names and saved each as a PNG.
+        Then I used the tab that allows you to change the map projections in order to select the different ones I wanted. After that I added a caption to indicate the map names and saved each as a PNG.
     </p>
     
     <h2>WGS84 Projection</h2>
@@ -25,7 +25,8 @@
     <img src=".//maps/54043.png" alt="Aitoff" width='500px'>
     </a>
 <h2>Pseudo-Mercator Projection</h2>
-<h3>This projection is the traditional Mercator map in EPSG 3857. It is used in many classrooms and on Google Maps</h3>
+<h3>This projection is the traditional Mercator map in EPSG 3857. It is used in many classrooms and on Google Maps due to its accuracy in showing shape and direction near the equator. 
+    However, this projection does distort the countries at the poles, making them look bigger.</h3>
 <a href="./maps/EPSG3857.png">
 <img src="./maps/EPSG3857.png" alt="Aitoff" width='500px'>
 </a>
@@ -40,24 +41,23 @@
     <a href="./maps/World_Cylindrical_equal_area54034.png">
     <img src="./maps/World_Cylindrical_equal_area54034.png" alt="Aitoff" width='500px'></a>
 <h2>World Equidistant Conic Projection</h2>
-<h3>This projection is</h3>
+<h3>This projection is good for mapping East-West regions, but it distorts the distance at the bottom to be more spread out.</h3>
     <a href="./maps/World_equidistant_conic54027.png">
     <img src="./maps/World_equidistant_conic54027.png" alt="Aitoff" width='500px'></a>
 <h2>North Pole Azimuthal Equidistant Projection</h2>
-    <h3>This projection is another conic that presents</h3>
+    <h3>This projection is another conic that presents a similar view to the one above, but has a little less distortion at the top of the projection.</h3>
     <a href="./maps/NorthPoleAzimuthalEquidistant_102016.png">
     <img src="./maps/NorthPoleAzimuthalEquidistant_102016.png" alt="Aitoff" width='500px'></a>
-<h2>Sphere Craster Parabolic</h2>
-    <h3>This projection is</h3>
+<h2>Sphere Craster Parabolic Projection</h2>
+    <h3>This projection is almost a rounded diamond shape. I think it does a good job preserving the shape and size of countries for the most part, 
+        aside from slight distortion at the top of the projection.</h3>
     <a href="./maps/Sphere_craster_parabolic53046.png">
     <img src="./maps/Sphere_craster_parabolic53046.png" alt="Aitoff" width='500px'></a>
-<h2>The World From Space</h2>
-    <h3>This projection is</h3>
+<h2>The World From Space Projection</h2>
+    <h3>Like the name suggests, this projection is a view of what the Earth looks like from space. Without any clouds or differences in lighting, this allows viewers to 
+    get an accurate interpretation the shape, direction, and size of countries. However, because it is a sphere, the whole globe is not able to be seen at one time. </h3>
     <a href="./maps/TheWorldFromSpace_102038.png">
     <img src="./maps/TheWorldFromSpace_102038.png" alt="Aitoff" width='500px'></a>
-<h2 style="color:rgb(12, 157, 206)">Now, you should <u>add the following projections on your own:</u></h2>
-<h3>EPSG: 3857, 53018, 54034, 54027, 102016, and two additional projections that you choose.</h3>
-<p></p>
 <h2>Data used for this project</h2>
 <a href="https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_countries.zip"> Download Natrual Earth 1:10m Cultural Vector</a>
 </body>
