@@ -9,12 +9,12 @@
     <h1>In this project I learned how to display images in different projections</h1>
     
     <h2 style="color:rgb(12, 157, 206)"> How I made the different map projections using QGIS</h2>
-    <p>First I installed two plugins called Globe Builder and Indicatrix Mapper that allows you to customize the world view of different map projections and provide caps that show how the shape of the countries are distorted.
+    <p>First I installed two plugins called Globe Builder and Indicatrix Mapper that allows you to customize the world view of different map projections and provide caps that show how the shape of the countries are distorted with each projection.
         Then I used the Project Properties-CRS tab that allows you to change the map projections in order to select the different ones I wanted. After that I added a caption to identify the map names and saved each as a PNG.
     </p>
     
     <h2>WGS84 Projection</h2>
-    <h3>This projection preserves shape and distance towards the equator but distorts the countries 
+    <h3>This is the traditional percator projection. It preserves shape and distance towards the equator but distorts the countries 
         towards the poles by stretching them horizontally</h3>
     <a href=".//maps/4326.png">
     <img src=".//maps/4326.png" alt="WGS84" width='500px'>
@@ -25,7 +25,7 @@
     <img src=".//maps/54043.png" alt="Aitoff" width='500px'>
     </a>
 <h2>Pseudo-Mercator Projection</h2>
-<h3>This projection is the traditional Mercator map in EPSG 3857. It is used in many classrooms and on Google Maps due to its accuracy in showing shape and direction near the equator. 
+<h3>This projection is in EPSG 3857. It is used in many classrooms and on Google Maps due to its accuracy in showing shape and direction near the equator. 
     However, this projection does distort the countries at the poles, making them look bigger than they are. For example, Greenland appears much larger that it actually is.</h3>
 <a href="./maps/EPSG3857.png">
 <img src="./maps/EPSG3857.png" alt="Aitoff" width='500px'>
