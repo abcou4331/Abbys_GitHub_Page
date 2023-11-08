@@ -8,10 +8,14 @@
 <body>
     <a href="./NCwater_sources_and_CFriver.png">
         <img src="./NCwater_sources_and_CFriver.png" alt="your map" width='600px'></a>
-    <h2>This map shows the public water supply sources (the red dots) that are located within 15 miles of the Cape Fear River. I got the idea for this map after
+    <h3>This map shows the public water supply sources (the red dots) that are located within 15 miles of the Cape Fear River. I got the idea for this map after
         watching a documentary about the toxic PFAS in the Cape Fear River, which often ends up leaking into local water supplies. PFAS is a forever chemical that
         can be spread for many miles from its origin. I wanted to see how many water sources could be in danger of having PFAS in them based on how close to the river they are.
-    </h2>
+    </h3>
+    <h3>I made this map by first downloading a dataset of NC Counties and uploading it into QGIS. Then I georeferenced an image from the internet that displayed the Haw River flowing into the Cape Fear River
+        After georeferencing it, I traced the river and made a new line layer. After that, I deleted the georeferenced image to display just the one river. I then uploaded the water source data and put a 15 mile buffer on 
+        the river and intersected the point layer over it using the Geoprocessing tools. 
+    </h3>
     <a href="https://www.nconemap.gov/datasets/30cf567422ec4930ae0b0c8544f8263f_1/explore?location=34.977802%2C-79.065481%2C7.28"><h3>Link to Water Soure Point Data</h3></a>
 </body>
 </html>
